@@ -7,14 +7,14 @@ var schema = {
     keyPath:"timeStamp"
   }]
 };
-
+var options = {mechanisms: ['websql']};
 
 /**
  * Create and initialize the database. Depending on platform, this will
  * create IndexedDB or WebSql or even localStorage storage mechanism.
  * @type {ydn.db.Storage}
  */
-var db = new ydn.db.Storage('todo_2', schema);
+var db = new ydn.db.Storage('todo_2', schema, options);
 
 var deleteTodo = function (id) {
   db.remove('todo', id).fail(function(e) {
