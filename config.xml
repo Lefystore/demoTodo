@@ -21,6 +21,7 @@
 	<preference name="KeepRunning" value="false"/>
 	<preference name="InAppBrowserStorageEnabled" value="true"/>
 	<gap:platform name="android" />
-	<gap:splash src="splash.png" gap:platform="android" />
-	<icon src="icon.png" gap:platform="android" />
+	
+	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0.8" />
+
 </widget>

@@ -12,13 +12,16 @@
       text-decoration: none;
     }
   </style>
-  <script type="text/javascript" src="scripts/ydn.db-dev.js"></script>
+  
 
 </head>
 <body>
 <ul id="todoItems"></ul>
+
+<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+
 <input type="text" id="todo" name="todo" placeholder="What do you need to do?" style="width: 200px;" />
-<script type="text/javascript" src="scripts/todo.js"></script>
+
 <input type="submit" value="Add Todo Item" onclick="addTodo(); return false;"/>
 </body>
 </html>
