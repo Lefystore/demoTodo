@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>  
+<!-- PhoneGap Build -->  
+<script src="phonegap.js"></script>  
+<script src="device.js"></script>  
 
+<script src="vibration.js"></script>
+<script>
+document.addEventListener("deviceready", function(e) {  
+  
+    window.setTimeout(function() {   
+        alert('Hello device is ready'); 
+    }, 4000); 
+	navigator.notification.vibrate(2500);
+}, "false");  
+
+
+</script>
 </head>
 <body>
 
 <button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
 
 </body>
+
 </html>
