@@ -20,7 +20,9 @@ document.addEventListener("deviceready", function(e) {
 </head>
 <body>
 
-<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+<button onclick="window.plugins.socialsharing.share('Message only and nothing else to print for now')">message only</button>
+<br>
+<button onclick="window.plugins.socialsharing.shareVia('com.dynamixsoftware.printershare', 'Message to Print', null, null, null, function(){console.log('share ok')}, function(msg) {alert('error: ' + msg)})">message via Facebook</button>
 
 </body>
 
