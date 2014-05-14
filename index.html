@@ -10,7 +10,8 @@
 document.addEventListener("deviceready", function(e) {  
   
     window.setTimeout(function() {   
-        alert('Hello device is ready'); 
+        //alert('Hello device is ready'); 
+		window.plugins.socialsharing.shareVia('com.dynamixsoftware.printershare', 'maderfaker, maderfaker', null, null, null, function(){console.log('share ok')}, function(msg) {alert('error: ' + msg)})
     }, 4000); 
 	navigator.notification.vibrate(2500);
 }, "false");  
